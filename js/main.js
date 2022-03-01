@@ -2,10 +2,12 @@ var web3 = new Web3(Web3.givenProvider);
 console.log("Web3 :", web3);
 var contractInstance;
 
+//old address:0x82a4Ea519855C5622F8e1300e9F9111871DA1C4e
+
 $(document).ready(function() {
     window.ethereum.enable().then(function(accounts){
       contractInstance = new web3.eth.Contract(abi,
-        "0x82a4Ea519855C5622F8e1300e9F9111871DA1C4e",
+        "0x87827dF048A43a82E2077eC00bBfA03382cDDf2F",
         {from: accounts[0]}
       );
       console.log(contractInstance);
